@@ -34,6 +34,22 @@
 		</dependency>
 
 	</dependencies>
+	
+		<distributionManagement>
+	
+	    <repository>
+	      <id>nexus</id>
+	      <name>Nexus Repositary</name>
+	      <url>http://13.127.118.195:8081/repository/Zomato-Release-p1/</url>
+	    </repository>
+	    
+	    <snapshotRepository>
+	      <id>nexus</id>
+	      <name>Nexus Snapshot Repositary</name>
+	      <url>http://13.127.118.195:8081/repository/Zomato-Snapshot-P1/</url>
+	    </snapshotRepository>
+	    
+	</distributionManagement>
 
 	<!-- Committing and updating changes through Maven, by using below mvn command. 
 		For Commiting mvn -Dmessage="Updated using maven" scm:checkin For updating 
